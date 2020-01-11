@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: lucerop-deploy-app
+spec:
+  selector:
+    app: lucerop-deploy-app
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: http
